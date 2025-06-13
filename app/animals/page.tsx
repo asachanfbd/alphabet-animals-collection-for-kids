@@ -197,12 +197,30 @@ export default function AnimalsPage() {
     return pages;
   };
 
-  // Clean up audio when component unmounts
+  // Handle keyboard navigation
   useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      // Prevent default behavior for arrow keys
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        
+        if (event.key === 'ArrowLeft' && currentSlide > 0) {
+          prevSlide();
+        } else if (event.key === 'ArrowRight' && currentSlide < totalPages - 1) {
+          nextSlide();
+        }
+      }
+    };
+
+    // Add event listener
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup function
     return () => {
+      window.removeEventListener('keydown', handleKeyDown);
       stopAllAudio();
     };
-  }, []);
+  }, [currentSlide, totalPages]);
 
   const currentSlideData = animalSlides[currentSlide];
   const paginationLetters = getPaginationLetters();
@@ -382,8 +400,9 @@ export default function AnimalsPage() {
             onClick={prevSlide}
             size="lg"
             disabled={currentSlide === 0}
-            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm disabled:opacity-50 px-6 py-3 text-lg"
+            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm disabled:opacity-50 px-6 py-3 text-lg transition-all duration-200 active:scale-95"
             variant="outline"
+            type="button"
           >
             <ChevronLeft className="w-6 h-6" />
           </Button>
@@ -393,7 +412,8 @@ export default function AnimalsPage() {
             {paginationLetters.map((page) => (
               <button
                 key={page.index}
-                className={`w-12 h-12 rounded-full transition-all duration-300 flex items-center justify-center text-lg font-bold ${
+                type="button"
+                className={`w-12 h-12 rounded-full transition-all duration-300 flex items-center justify-center text-lg font-bold active:scale-95 ${
                   page.index === currentSlide
                     ? 'bg-white text-gray-800 scale-110 shadow-lg ring-2 ring-white/50' 
                     : 'bg-white/30 text-white hover:bg-white/50 hover:text-gray-800 hover:scale-105'
@@ -410,11 +430,19 @@ export default function AnimalsPage() {
             onClick={nextSlide}
             size="lg"
             disabled={currentSlide === totalPages - 1}
-            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm disabled:opacity-50 px-6 py-3 text-lg"
+            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm disabled:opacity-50 px-6 py-3 text-lg transition-all duration-200 active:scale-95"
             variant="outline"
+            type="button"
           >
             <ChevronRight className="w-6 h-6" />
           </Button>
+        </div>
+        
+        {/* Keyboard Navigation Hint */}
+        <div className="text-center mt-4">
+          <p className="text-white/60 text-sm">
+            Use ← → arrow keys or click buttons to navigate
+          </p>
         </div>
       </div>
     </div>
