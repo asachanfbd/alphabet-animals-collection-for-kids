@@ -172,10 +172,10 @@ export default function AnimalsPage() {
   // Generate pagination letters with 3 pages to left and right
   const getPaginationLetters = () => {
     const currentPage = currentSlide; // 0-based index
-    const maxVisible = 7; // 3 left + current + 3 right
+    const maxVisible = 5; // 3 left + current + 3 right
     
-    let startPage = Math.max(0, currentPage - 3);
-    let endPage = Math.min(totalPages - 1, currentPage + 3);
+    let startPage = Math.max(0, currentPage - 2);
+    let endPage = Math.min(totalPages - 1, currentPage + 2);
     
     // Adjust if we're near the beginning or end
     if (endPage - startPage + 1 < maxVisible) {
@@ -383,9 +383,6 @@ export default function AnimalsPage() {
                 <h3 className="text-3xl font-bold text-gray-800 mb-2">
                   {animal.name}
                 </h3>
-                <p className="text-lg text-gray-600">
-                  {playingSound === animal.name ? 'Playing sound...' : 'Tap to hear sound'}
-                </p>
               </div>
             </Card>
           ))}

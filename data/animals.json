@@ -174,9 +174,9 @@
           "sound": "/sounds/animals/impala.mp3"
         },
         {
-          "name": "Insect",
-          "image": "/images/animals/insect.jpg",
-          "sound": "/sounds/animals/insect.mp3"
+          "name": "Ibis",
+          "image": "/images/animals/ibis.jpg",
+          "sound": "/sounds/animals/ibis.mp3"
         }
       ]
     },
