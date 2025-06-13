@@ -5,17 +5,17 @@
       "animals": [
         {
           "name": "Alligator",
-          "image": "/images/animals/alligator.jpg",
+          "image": "/images/animals/alligator.webp",
           "sound": "/sounds/animals/alligator.mp3"
         },
         {
           "name": "Alpaca",
-          "image": "/images/animals/alpaca.jpg",
+          "image": "/images/animals/alpaca.webp",
           "sound": "/sounds/animals/alpaca.mp3"
         },
         {
           "name": "Ape",
-          "image": "/images/animals/ape.jpg",
+          "image": "/images/animals/ape.webp",
           "sound": "/sounds/animals/ape.mp3"
         }
       ]
@@ -25,17 +25,17 @@
       "animals": [
         {
           "name": "Bear",
-          "image": "/images/animals/bear.jpg",
+          "image": "/images/animals/bear.webp",
           "sound": "/sounds/animals/bear.mp3"
         },
         {
           "name": "Bee",
-          "image": "/images/animals/bee.jpg",
+          "image": "/images/animals/bee.webp",
           "sound": "/sounds/animals/bee.mp3"
         },
         {
           "name": "Buffalo",
-          "image": "/images/animals/buffalo.jpg",
+          "image": "/images/animals/buffalo.webp",
           "sound": "/sounds/animals/buffalo.mp3"
         }
       ]
@@ -45,17 +45,17 @@
       "animals": [
         {
           "name": "Cat",
-          "image": "/images/animals/cat.jpg",
+          "image": "/images/animals/cat.webp",
           "sound": "/sounds/animals/cat.mp3"
         },
         {
           "name": "Cow",
-          "image": "/images/animals/cow.jpg",
+          "image": "/images/animals/cow.webp",
           "sound": "/sounds/animals/cow.mp3"
         },
         {
           "name": "Chicken",
-          "image": "/images/animals/chicken.jpg",
+          "image": "/images/animals/chicken.webp",
           "sound": "/sounds/animals/chicken.mp3"
         }
       ]
@@ -65,17 +65,17 @@
       "animals": [
         {
           "name": "Dog",
-          "image": "/images/animals/dog.jpg",
+          "image": "/images/animals/dog.webp",
           "sound": "/sounds/animals/dog.mp3"
         },
         {
           "name": "Duck",
-          "image": "/images/animals/duck.jpg",
+          "image": "/images/animals/duck.webp",
           "sound": "/sounds/animals/duck.mp3"
         },
         {
           "name": "Dolphin",
-          "image": "/images/animals/dolphin.jpg",
+          "image": "/images/animals/dolphin.webp",
           "sound": "/sounds/animals/dolphin.mp3"
         }
       ]
@@ -85,17 +85,17 @@
       "animals": [
         {
           "name": "Elephant",
-          "image": "/images/animals/elephant.jpg",
+          "image": "/images/animals/elephant.webp",
           "sound": "/sounds/animals/elephant.mp3"
         },
         {
           "name": "Eagle",
-          "image": "/images/animals/eagle.jpg",
+          "image": "/images/animals/eagle.webp",
           "sound": "/sounds/animals/eagle.mp3"
         },
         {
           "name": "Eel",
-          "image": "/images/animals/eel.jpg",
+          "image": "/images/animals/eel.webp",
           "sound": "/sounds/animals/eel.mp3"
         }
       ]
@@ -105,17 +105,17 @@
       "animals": [
         {
           "name": "Fox",
-          "image": "/images/animals/fox.jpg",
+          "image": "/images/animals/fox.webp",
           "sound": "/sounds/animals/fox.mp3"
         },
         {
           "name": "Frog",
-          "image": "/images/animals/frog.jpg",
+          "image": "/images/animals/frog.webp",
           "sound": "/sounds/animals/frog.mp3"
         },
         {
           "name": "Fish",
-          "image": "/images/animals/fish.jpg",
+          "image": "/images/animals/fish.webp",
           "sound": "/sounds/animals/fish.mp3"
         }
       ]
@@ -125,17 +125,17 @@
       "animals": [
         {
           "name": "Goat",
-          "image": "/images/animals/goat.jpg",
+          "image": "/images/animals/goat.webp",
           "sound": "/sounds/animals/goat.mp3"
         },
         {
           "name": "Gecko",
-          "image": "/images/animals/gecko.jpg",
+          "image": "/images/animals/gecko.webp",
           "sound": "/sounds/animals/gecko.mp3"
         },
         {
           "name": "Giraffe",
-          "image": "/images/animals/giraffe.jpg",
+          "image": "/images/animals/giraffe.webp",
           "sound": "/sounds/animals/giraffe.mp3"
         }
       ]
@@ -145,17 +145,17 @@
       "animals": [
         {
           "name": "Horse",
-          "image": "/images/animals/horse.jpg",
+          "image": "/images/animals/horse.webp",
           "sound": "/sounds/animals/horse.mp3"
         },
         {
           "name": "Hamster",
-          "image": "/images/animals/hamster.jpg",
+          "image": "/images/animals/hamster.webp",
           "sound": "/sounds/animals/hamster.mp3"
         },
         {
           "name": "Hedgehog",
-          "image": "/images/animals/hedgehog.jpg",
+          "image": "/images/animals/hedgehog.webp",
           "sound": "/sounds/animals/hedgehog.mp3"
         }
       ]
@@ -165,17 +165,17 @@
       "animals": [
         {
           "name": "Iguana",
-          "image": "/images/animals/iguana.jpg",
+          "image": "/images/animals/iguana.webp",
           "sound": "/sounds/animals/iguana.mp3"
         },
         {
           "name": "Impala",
-          "image": "/images/animals/impala.jpg",
+          "image": "/images/animals/impala.webp",
           "sound": "/sounds/animals/impala.mp3"
         },
         {
           "name": "Ibis",
-          "image": "/images/animals/ibis.jpg",
+          "image": "/images/animals/ibis.webp",
           "sound": "/sounds/animals/ibis.mp3"
         }
       ]
@@ -185,17 +185,17 @@
       "animals": [
         {
           "name": "Jaguar",
-          "image": "/images/animals/jaguar.jpg",
+          "image": "/images/animals/jaguar.webp",
           "sound": "/sounds/animals/jaguar.mp3"
         },
         {
           "name": "Jellyfish",
-          "image": "/images/animals/jellyfish.jpg",
+          "image": "/images/animals/jellyfish.webp",
           "sound": "/sounds/animals/jellyfish.mp3"
         },
         {
           "name": "Jackal",
-          "image": "/images/animals/jackal.jpg",
+          "image": "/images/animals/jackal.webp",
           "sound": "/sounds/animals/jackal.mp3"
         }
       ]
@@ -205,17 +205,17 @@
       "animals": [
         {
           "name": "Kangaroo",
-          "image": "/images/animals/kangaroo.jpg",
+          "image": "/images/animals/kangaroo.webp",
           "sound": "/sounds/animals/kangaroo.mp3"
         },
         {
           "name": "Koala",
-          "image": "/images/animals/koala.jpg",
+          "image": "/images/animals/koala.webp",
           "sound": "/sounds/animals/koala.mp3"
         },
         {
           "name": "Komodo Dragon",
-          "image": "/images/animals/komodo-dragon.jpg",
+          "image": "/images/animals/komodo-dragon.webp",
           "sound": "/sounds/animals/komodo-dragon.mp3"
         }
       ]
@@ -225,17 +225,17 @@
       "animals": [
         {
           "name": "Lion",
-          "image": "/images/animals/lion.jpg",
+          "image": "/images/animals/lion.webp",
           "sound": "/sounds/animals/lion.mp3"
         },
         {
           "name": "Llama",
-          "image": "/images/animals/llama.jpg",
+          "image": "/images/animals/llama.webp",
           "sound": "/sounds/animals/llama.mp3"
         },
         {
           "name": "Lizard",
-          "image": "/images/animals/lizard.jpg",
+          "image": "/images/animals/lizard.webp",
           "sound": "/sounds/animals/lizard.mp3"
         }
       ]
@@ -245,17 +245,17 @@
       "animals": [
         {
           "name": "Monkey",
-          "image": "/images/animals/monkey.jpg",
+          "image": "/images/animals/monkey.webp",
           "sound": "/sounds/animals/monkey.mp3"
         },
         {
           "name": "Mouse",
-          "image": "/images/animals/mouse.jpg",
+          "image": "/images/animals/mouse.webp",
           "sound": "/sounds/animals/mouse.mp3"
         },
         {
           "name": "Moose",
-          "image": "/images/animals/moose.jpg",
+          "image": "/images/animals/moose.webp",
           "sound": "/sounds/animals/moose.mp3"
         }
       ]
@@ -265,17 +265,17 @@
       "animals": [
         {
           "name": "Newt",
-          "image": "/images/animals/newt.jpg",
+          "image": "/images/animals/newt.webp",
           "sound": "/sounds/animals/newt.mp3"
         },
         {
           "name": "Narwhal",
-          "image": "/images/animals/narwhal.jpg",
+          "image": "/images/animals/narwhal.webp",
           "sound": "/sounds/animals/narwhal.mp3"
         },
         {
           "name": "Nightingale",
-          "image": "/images/animals/nightingale.jpg",
+          "image": "/images/animals/nightingale.webp",
           "sound": "/sounds/animals/nightingale.mp3"
         }
       ]
@@ -285,17 +285,17 @@
       "animals": [
         {
           "name": "Octopus",
-          "image": "/images/animals/octopus.jpg",
+          "image": "/images/animals/octopus.webp",
           "sound": "/sounds/animals/octopus.mp3"
         },
         {
           "name": "Ostrich",
-          "image": "/images/animals/ostrich.jpg",
+          "image": "/images/animals/ostrich.webp",
           "sound": "/sounds/animals/ostrich.mp3"
         },
         {
           "name": "Otter",
-          "image": "/images/animals/otter.jpg",
+          "image": "/images/animals/otter.webp",
           "sound": "/sounds/animals/otter.mp3"
         }
       ]
@@ -305,17 +305,17 @@
       "animals": [
         {
           "name": "Penguin",
-          "image": "/images/animals/penguin.jpg",
+          "image": "/images/animals/penguin.webp",
           "sound": "/sounds/animals/penguin.mp3"
         },
         {
           "name": "Panda",
-          "image": "/images/animals/panda.jpg",
+          "image": "/images/animals/panda.webp",
           "sound": "/sounds/animals/panda.mp3"
         },
         {
           "name": "Parrot",
-          "image": "/images/animals/parrot.jpg",
+          "image": "/images/animals/parrot.webp",
           "sound": "/sounds/animals/parrot.mp3"
         }
       ]
@@ -325,12 +325,12 @@
       "animals": [
         {
           "name": "Quail",
-          "image": "/images/animals/quail.jpg",
+          "image": "/images/animals/quail.webp",
           "sound": "/sounds/animals/quail.mp3"
         },
         {
           "name": "Quokka",
-          "image": "/images/animals/quokka.jpg",
+          "image": "/images/animals/quokka.webp",
           "sound": "/sounds/animals/quokka.mp3"
         },
         {
@@ -345,17 +345,17 @@
       "animals": [
         {
           "name": "Rabbit",
-          "image": "/images/animals/rabbit.jpg",
+          "image": "/images/animals/rabbit.webp",
           "sound": "/sounds/animals/rabbit.mp3"
         },
         {
           "name": "Raccoon",
-          "image": "/images/animals/raccoon.jpg",
+          "image": "/images/animals/raccoon.webp",
           "sound": "/sounds/animals/raccoon.mp3"
         },
         {
           "name": "Rat",
-          "image": "/images/animals/rat.jpg",
+          "image": "/images/animals/rat.webp",
           "sound": "/sounds/animals/rat.mp3"
         }
       ]
@@ -365,17 +365,17 @@
       "animals": [
         {
           "name": "Snake",
-          "image": "/images/animals/snake.jpg",
+          "image": "/images/animals/snake.webp",
           "sound": "/sounds/animals/snake.mp3"
         },
         {
           "name": "Sheep",
-          "image": "/images/animals/sheep.jpg",
+          "image": "/images/animals/sheep.webp",
           "sound": "/sounds/animals/sheep.mp3"
         },
         {
           "name": "Seal",
-          "image": "/images/animals/seal.jpg",
+          "image": "/images/animals/seal.webp",
           "sound": "/sounds/animals/seal.mp3"
         }
       ]
@@ -385,17 +385,17 @@
       "animals": [
         {
           "name": "Tiger",
-          "image": "/images/animals/tiger.jpg",
+          "image": "/images/animals/tiger.webp",
           "sound": "/sounds/animals/tiger.mp3"
         },
         {
           "name": "Turtle",
-          "image": "/images/animals/turtle.jpg",
+          "image": "/images/animals/turtle.webp",
           "sound": "/sounds/animals/turtle.mp3"
         },
         {
           "name": "Tarantula",
-          "image": "/images/animals/tarantula.jpg",
+          "image": "/images/animals/tarantula.webp",
           "sound": "/sounds/animals/tarantula.mp3"
         }
       ]
@@ -405,7 +405,7 @@
       "animals": [
         {
           "name": "Urchin (sea)",
-          "image": "/images/animals/urchin.jpg",
+          "image": "/images/animals/urchin.webp",
           "sound": "/sounds/animals/urchin.mp3"
         },
         {
@@ -420,17 +420,17 @@
       "animals": [
         {
           "name": "Vulture",
-          "image": "/images/animals/vulture.jpg",
+          "image": "/images/animals/vulture.webp",
           "sound": "/sounds/animals/vulture.mp3"
         },
         {
           "name": "Viper (snake)",
-          "image": "/images/animals/viper.jpg",
+          "image": "/images/animals/viper.webp",
           "sound": "/sounds/animals/viper.mp3"
         },
         {
           "name": "Vicuna",
-          "image": "/images/animals/vicuna.jpg",
+          "image": "/images/animals/vicuna.webp",
           "sound": "/sounds/animals/vicuna.mp3"
         }
       ]
@@ -440,17 +440,17 @@
       "animals": [
         {
           "name": "Walrus",
-          "image": "/images/animals/walrus.jpg",
+          "image": "/images/animals/walrus.webp",
           "sound": "/sounds/animals/walrus.mp3"
         },
         {
           "name": "Wasp",
-          "image": "/images/animals/wasp.jpg",
+          "image": "/images/animals/wasp.webp",
           "sound": "/sounds/animals/wasp.mp3"
         },
         {
           "name": "Whale",
-          "image": "/images/animals/whale.jpg",
+          "image": "/images/animals/whale.webp",
           "sound": "/sounds/animals/whale.mp3"
         }
       ]
@@ -460,17 +460,17 @@
       "animals": [
         {
           "name": "Xenops",
-          "image": "/images/animals/xenops.jpg",
+          "image": "/images/animals/xenops.webp",
           "sound": "/sounds/animals/xenops.mp3"
         },
         {
           "name": "Xenarthra",
-          "image": "/images/animals/xenarthra.jpg",
+          "image": "/images/animals/xenarthra.webp",
           "sound": "/sounds/animals/xenarthra.mp3"
         },
         {
           "name": "Xiphosura (horseshoe crab)",
-          "image": "/images/animals/xiphosura.png",
+          "image": "/images/animals/xiphosura.webp",
           "sound": "/sounds/animals/xiphosura.mp3"
         }
       ]
@@ -480,17 +480,17 @@
       "animals": [
         {
           "name": "Yak",
-          "image": "/images/animals/yak.jpg",
+          "image": "/images/animals/yak.webp",
           "sound": "/sounds/animals/yak.mp3"
         },
         {
           "name": "Yellowjacket",
-          "image": "/images/animals/yellowjacket.jpg",
+          "image": "/images/animals/yellowjacket.webp",
           "sound": "/sounds/animals/yellowjacket.mp3"
         },
         {
           "name": "Yabby",
-          "image": "/images/animals/yabby.png",
+          "image": "/images/animals/yabby.webp",
           "sound": "/sounds/animals/yabby.mp3"
         }
       ]
@@ -500,12 +500,12 @@
       "animals": [
         {
           "name": "Zebra",
-          "image": "/images/animals/zebra.jpg",
+          "image": "/images/animals/zebra.webp",
           "sound": "/sounds/animals/zebra.mp3"
         },
         {
           "name": "Zander (fish)",
-          "image": "/images/animals/zander.jpg",
+          "image": "/images/animals/zander.webp",
           "sound": "/sounds/animals/zander.mp3"
         }
       ]
