@@ -1,0 +1,504 @@
+{
+  "animals": [
+    {
+      "letter": "A",
+      "animals": [
+        {
+          "name": "Alligator",
+          "image": "/images/animals/alligator.jpg",
+          "sound": "/sounds/animals/alligator.mp3"
+        },
+        {
+          "name": "Alpaca",
+          "image": "/images/animals/alpaca.jpg",
+          "sound": "/sounds/animals/alpaca.mp3"
+        },
+        {
+          "name": "Ape",
+          "image": "/images/animals/ape.jpg",
+          "sound": "/sounds/animals/ape.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "animals": [
+        {
+          "name": "Bear",
+          "image": "/images/animals/bear.jpg",
+          "sound": "/sounds/animals/bear.mp3"
+        },
+        {
+          "name": "Bee",
+          "image": "/images/animals/bee.jpg",
+          "sound": "/sounds/animals/bee.mp3"
+        },
+        {
+          "name": "Buffalo",
+          "image": "/images/animals/buffalo.jpg",
+          "sound": "/sounds/animals/buffalo.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "animals": [
+        {
+          "name": "Cat",
+          "image": "/images/animals/cat.jpg",
+          "sound": "/sounds/animals/cat.mp3"
+        },
+        {
+          "name": "Cow",
+          "image": "/images/animals/cow.jpg",
+          "sound": "/sounds/animals/cow.mp3"
+        },
+        {
+          "name": "Chicken",
+          "image": "/images/animals/chicken.jpg",
+          "sound": "/sounds/animals/chicken.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "animals": [
+        {
+          "name": "Dog",
+          "image": "/images/animals/dog.jpg",
+          "sound": "/sounds/animals/dog.mp3"
+        },
+        {
+          "name": "Duck",
+          "image": "/images/animals/duck.jpg",
+          "sound": "/sounds/animals/duck.mp3"
+        },
+        {
+          "name": "Dolphin",
+          "image": "/images/animals/dolphin.jpg",
+          "sound": "/sounds/animals/dolphin.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "animals": [
+        {
+          "name": "Elephant",
+          "image": "/images/animals/elephant.jpg",
+          "sound": "/sounds/animals/elephant.mp3"
+        },
+        {
+          "name": "Eagle",
+          "image": "/images/animals/eagle.jpg",
+          "sound": "/sounds/animals/eagle.mp3"
+        },
+        {
+          "name": "Eel",
+          "image": "/images/animals/eel.jpg",
+          "sound": "/sounds/animals/eel.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "animals": [
+        {
+          "name": "Fox",
+          "image": "/images/animals/fox.jpg",
+          "sound": "/sounds/animals/fox.mp3"
+        },
+        {
+          "name": "Frog",
+          "image": "/images/animals/frog.jpg",
+          "sound": "/sounds/animals/frog.mp3"
+        },
+        {
+          "name": "Fish",
+          "image": "/images/animals/fish.jpg",
+          "sound": "/sounds/animals/fish.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "animals": [
+        {
+          "name": "Goat",
+          "image": "/images/animals/goat.jpg",
+          "sound": "/sounds/animals/goat.mp3"
+        },
+        {
+          "name": "Gecko",
+          "image": "/images/animals/gecko.jpg",
+          "sound": "/sounds/animals/gecko.mp3"
+        },
+        {
+          "name": "Giraffe",
+          "image": "/images/animals/giraffe.jpg",
+          "sound": "/sounds/animals/giraffe.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "animals": [
+        {
+          "name": "Horse",
+          "image": "/images/animals/horse.jpg",
+          "sound": "/sounds/animals/horse.mp3"
+        },
+        {
+          "name": "Hamster",
+          "image": "/images/animals/hamster.jpg",
+          "sound": "/sounds/animals/hamster.mp3"
+        },
+        {
+          "name": "Hedgehog",
+          "image": "/images/animals/hedgehog.jpg",
+          "sound": "/sounds/animals/hedgehog.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "animals": [
+        {
+          "name": "Iguana",
+          "image": "/images/animals/iguana.jpg",
+          "sound": "/sounds/animals/iguana.mp3"
+        },
+        {
+          "name": "Impala",
+          "image": "/images/animals/impala.jpg",
+          "sound": "/sounds/animals/impala.mp3"
+        },
+        {
+          "name": "Insect",
+          "image": "/images/animals/insect.jpg",
+          "sound": "/sounds/animals/insect.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "J",
+      "animals": [
+        {
+          "name": "Jaguar",
+          "image": "/images/animals/jaguar.jpg",
+          "sound": "/sounds/animals/jaguar.mp3"
+        },
+        {
+          "name": "Jellyfish",
+          "image": "/images/animals/jellyfish.jpg",
+          "sound": "/sounds/animals/jellyfish.mp3"
+        },
+        {
+          "name": "Jackal",
+          "image": "/images/animals/jackal.jpg",
+          "sound": "/sounds/animals/jackal.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "K",
+      "animals": [
+        {
+          "name": "Kangaroo",
+          "image": "/images/animals/kangaroo.jpg",
+          "sound": "/sounds/animals/kangaroo.mp3"
+        },
+        {
+          "name": "Koala",
+          "image": "/images/animals/koala.jpg",
+          "sound": "/sounds/animals/koala.mp3"
+        },
+        {
+          "name": "Kiwi",
+          "image": "/images/animals/kiwi.jpg",
+          "sound": "/sounds/animals/kiwi.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "animals": [
+        {
+          "name": "Lion",
+          "image": "/images/animals/lion.jpg",
+          "sound": "/sounds/animals/lion.mp3"
+        },
+        {
+          "name": "Llama",
+          "image": "/images/animals/llama.jpg",
+          "sound": "/sounds/animals/llama.mp3"
+        },
+        {
+          "name": "Lizard",
+          "image": "/images/animals/lizard.jpg",
+          "sound": "/sounds/animals/lizard.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "animals": [
+        {
+          "name": "Monkey",
+          "image": "/images/animals/monkey.jpg",
+          "sound": "/sounds/animals/monkey.mp3"
+        },
+        {
+          "name": "Mouse",
+          "image": "/images/animals/mouse.jpg",
+          "sound": "/sounds/animals/mouse.mp3"
+        },
+        {
+          "name": "Moose",
+          "image": "/images/animals/moose.jpg",
+          "sound": "/sounds/animals/moose.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "N",
+      "animals": [
+        {
+          "name": "Newt",
+          "image": "/images/animals/newt.jpg",
+          "sound": "/sounds/animals/newt.mp3"
+        },
+        {
+          "name": "Narwhal",
+          "image": "/images/animals/narwhal.jpg",
+          "sound": "/sounds/animals/narwhal.mp3"
+        },
+        {
+          "name": "Nightingale",
+          "image": "/images/animals/nightingale.jpg",
+          "sound": "/sounds/animals/nightingale.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "O",
+      "animals": [
+        {
+          "name": "Octopus",
+          "image": "/images/animals/octopus.jpg",
+          "sound": "/sounds/animals/octopus.mp3"
+        },
+        {
+          "name": "Ostrich",
+          "image": "/images/animals/ostrich.jpg",
+          "sound": "/sounds/animals/ostrich.mp3"
+        },
+        {
+          "name": "Otter",
+          "image": "/images/animals/otter.jpg",
+          "sound": "/sounds/animals/otter.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "animals": [
+        {
+          "name": "Penguin",
+          "image": "/images/animals/penguin.jpg",
+          "sound": "/sounds/animals/penguin.mp3"
+        },
+        {
+          "name": "Panda",
+          "image": "/images/animals/panda.jpg",
+          "sound": "/sounds/animals/panda.mp3"
+        },
+        {
+          "name": "Parrot",
+          "image": "/images/animals/parrot.jpg",
+          "sound": "/sounds/animals/parrot.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "Q",
+      "animals": [
+        {
+          "name": "Quail",
+          "image": "/images/animals/quail.jpg",
+          "sound": "/sounds/animals/quail.mp3"
+        },
+        {
+          "name": "Quokka",
+          "image": "/images/animals/quokka.jpg",
+          "sound": "/sounds/animals/quokka.mp3"
+        },
+        {
+          "name": "Quoll",
+          "image": "/images/animals/quoll.jpg",
+          "sound": "/sounds/animals/quoll.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "animals": [
+        {
+          "name": "Rabbit",
+          "image": "/images/animals/rabbit.jpg",
+          "sound": "/sounds/animals/rabbit.mp3"
+        },
+        {
+          "name": "Raccoon",
+          "image": "/images/animals/raccoon.jpg",
+          "sound": "/sounds/animals/raccoon.mp3"
+        },
+        {
+          "name": "Rat",
+          "image": "/images/animals/rat.jpg",
+          "sound": "/sounds/animals/rat.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "animals": [
+        {
+          "name": "Snake",
+          "image": "/images/animals/snake.jpg",
+          "sound": "/sounds/animals/snake.mp3"
+        },
+        {
+          "name": "Sheep",
+          "image": "/images/animals/sheep.jpg",
+          "sound": "/sounds/animals/sheep.mp3"
+        },
+        {
+          "name": "Seal",
+          "image": "/images/animals/seal.jpg",
+          "sound": "/sounds/animals/seal.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "animals": [
+        {
+          "name": "Tiger",
+          "image": "/images/animals/tiger.jpg",
+          "sound": "/sounds/animals/tiger.mp3"
+        },
+        {
+          "name": "Turtle",
+          "image": "/images/animals/turtle.jpg",
+          "sound": "/sounds/animals/turtle.mp3"
+        },
+        {
+          "name": "Tarantula",
+          "image": "/images/animals/tarantula.jpg",
+          "sound": "/sounds/animals/tarantula.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "U",
+      "animals": [
+        {
+          "name": "Unicorn (mythical)",
+          "image": "/images/animals/unicorn.jpg",
+          "sound": "/sounds/animals/unicorn.mp3"
+        },
+        {
+          "name": "Urchin (sea)",
+          "image": "/images/animals/urchin.jpg",
+          "sound": "/sounds/animals/urchin.mp3"
+        },
+        {
+          "name": "Uakari (monkey)",
+          "image": "/images/animals/uakari.jpg",
+          "sound": "/sounds/animals/uakari.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "V",
+      "animals": [
+        {
+          "name": "Vulture",
+          "image": "/images/animals/vulture.jpg",
+          "sound": "/sounds/animals/vulture.mp3"
+        },
+        {
+          "name": "Viper (snake)",
+          "image": "/images/animals/viper.jpg",
+          "sound": "/sounds/animals/viper.mp3"
+        },
+        {
+          "name": "Vicuna",
+          "image": "/images/animals/vicuna.jpg",
+          "sound": "/sounds/animals/vicuna.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "W",
+      "animals": [
+        {
+          "name": "Walrus",
+          "image": "/images/animals/walrus.jpg",
+          "sound": "/sounds/animals/walrus.mp3"
+        },
+        {
+          "name": "Wasp",
+          "image": "/images/animals/wasp.jpg",
+          "sound": "/sounds/animals/wasp.mp3"
+        },
+        {
+          "name": "Whale",
+          "image": "/images/animals/whale.jpg",
+          "sound": "/sounds/animals/whale.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "X",
+      "animals": [
+        {
+          "name": "Xenomorph",
+          "image": "/images/animals/xenomorph.jpg",
+          "sound": "/sounds/animals/xenomorph.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "Y",
+      "animals": [
+        {
+          "name": "Yak",
+          "image": "/images/animals/yak.jpg",
+          "sound": "/sounds/animals/yak.mp3"
+        },
+        {
+          "name": "Yellowjacket",
+          "image": "/images/animals/yellowjacket.jpg",
+          "sound": "/sounds/animals/yellowjacket.mp3"
+        },
+        {
+          "name": "Yeti (mythical)",
+          "image": "/images/animals/yeti.jpg",
+          "sound": "/sounds/animals/yeti.mp3"
+        }
+      ]
+    },
+    {
+      "letter": "Z",
+      "animals": [
+        {
+          "name": "Zebra",
+          "image": "/images/animals/zebra.jpg",
+          "sound": "/sounds/animals/zebra.mp3"
+        }
+      ]
+    }
+  ]
+}
