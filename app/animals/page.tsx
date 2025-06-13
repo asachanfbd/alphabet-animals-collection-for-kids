@@ -121,7 +121,10 @@ export default function AnimalsPage() {
 
   const handleAnimalClick = async (animal: Animal) => {
     // Stop any currently playing audio
-    stopAllAudio();
+    if(playingSound === animal.name) {
+      stopAllAudio();
+      return;
+    }
     
     setPlayingSound(animal.name);
     
@@ -169,6 +172,16 @@ export default function AnimalsPage() {
     setCurrentSlide(pageIndex);
   };
 
+  const selectSlide = (letter: string) => {
+    stopAllAudio();
+    const index = animalSlides.findIndex(slide => slide.letter.toLowerCase() === letter.toLowerCase());
+    if (index !== -1) {
+      setCurrentSlide(index);
+    } else {
+      console.warn(`No slide found for letter: ${letter}`);
+    }
+  };
+
   // Generate pagination letters with 3 pages to left and right
   const getPaginationLetters = () => {
     const currentPage = currentSlide; // 0-based index
@@ -209,6 +222,9 @@ export default function AnimalsPage() {
         } else if (event.key === 'ArrowRight' && currentSlide < totalPages - 1) {
           nextSlide();
         }
+      }
+      if (/^[a-zA-Z]$/.test(event.key)) {
+        selectSlide(event.key);
       }
     };
 
@@ -282,84 +298,7 @@ export default function AnimalsPage() {
                     priority={index < 3}
                   />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-blue-200 to-purple-200 flex items-center justify-center">
-                    <div className="text-8xl opacity-60">
-                      {animal.name === 'Alligator' && '🐊'}
-                      {animal.name === 'Ant' && '🐜'}
-                      {animal.name === 'Ape' && '🦍'}
-                      {animal.name === 'Bear' && '🐻'}
-                      {animal.name === 'Bee' && '🐝'}
-                      {animal.name === 'Buffalo' && '🐃'}
-                      {animal.name === 'Cat' && '🐱'}
-                      {animal.name === 'Cow' && '🐄'}
-                      {animal.name === 'Chicken' && '🐔'}
-                      {animal.name === 'Dog' && '🐶'}
-                      {animal.name === 'Duck' && '🦆'}
-                      {animal.name === 'Dolphin' && '🐬'}
-                      {animal.name === 'Elephant' && '🐘'}
-                      {animal.name === 'Eagle' && '🦅'}
-                      {animal.name === 'Eel' && '🐍'}
-                      {animal.name === 'Fox' && '🦊'}
-                      {animal.name === 'Frog' && '🐸'}
-                      {animal.name === 'Fish' && '🐟'}
-                      {animal.name === 'Goat' && '🐐'}
-                      {animal.name === 'Gecko' && '🦎'}
-                      {animal.name === 'Giraffe' && '🦒'}
-                      {animal.name === 'Horse' && '🐴'}
-                      {animal.name === 'Hamster' && '🐹'}
-                      {animal.name === 'Hedgehog' && '🦔'}
-                      {animal.name === 'Iguana' && '🦎'}
-                      {animal.name === 'Impala' && '🦌'}
-                      {animal.name === 'Insect' && '🐛'}
-                      {animal.name === 'Jaguar' && '🐆'}
-                      {animal.name === 'Jellyfish' && '🪼'}
-                      {animal.name === 'Jackal' && '🐺'}
-                      {animal.name === 'Kangaroo' && '🦘'}
-                      {animal.name === 'Koala' && '🐨'}
-                      {animal.name === 'Kiwi' && '🥝'}
-                      {animal.name === 'Lion' && '🦁'}
-                      {animal.name === 'Llama' && '🦙'}
-                      {animal.name === 'Lizard' && '🦎'}
-                      {animal.name === 'Monkey' && '🐵'}
-                      {animal.name === 'Mouse' && '🐭'}
-                      {animal.name === 'Moose' && '🫎'}
-                      {animal.name === 'Newt' && '🦎'}
-                      {animal.name === 'Narwhal' && '🐋'}
-                      {animal.name === 'Nightingale' && '🐦'}
-                      {animal.name === 'Octopus' && '🐙'}
-                      {animal.name === 'Ostrich' && '🪶'}
-                      {animal.name === 'Otter' && '🦦'}
-                      {animal.name === 'Penguin' && '🐧'}
-                      {animal.name === 'Panda' && '🐼'}
-                      {animal.name === 'Parrot' && '🦜'}
-                      {animal.name === 'Quail' && '🐦'}
-                      {animal.name === 'Quokka' && '🐹'}
-                      {animal.name === 'Quoll' && '🐱'}
-                      {animal.name === 'Rabbit' && '🐰'}
-                      {animal.name === 'Raccoon' && '🦝'}
-                      {animal.name === 'Rat' && '🐀'}
-                      {animal.name === 'Snake' && '🐍'}
-                      {animal.name === 'Sheep' && '🐑'}
-                      {animal.name === 'Seal' && '🦭'}
-                      {animal.name === 'Tiger' && '🐅'}
-                      {animal.name === 'Turtle' && '🐢'}
-                      {animal.name === 'Tarantula' && '🕷️'}
-                      {animal.name.includes('Unicorn') && '🦄'}
-                      {animal.name.includes('Urchin') && '🦔'}
-                      {animal.name.includes('Uakari') && '🐵'}
-                      {animal.name === 'Vulture' && '🦅'}
-                      {animal.name.includes('Viper') && '🐍'}
-                      {animal.name === 'Vicuna' && '🦙'}
-                      {animal.name === 'Walrus' && '🦭'}
-                      {animal.name === 'Wasp' && '🐝'}
-                      {animal.name === 'Whale' && '🐋'}
-                      {animal.name === 'Xenomorph' && '👽'}
-                      {animal.name === 'Yak' && '🐂'}
-                      {animal.name === 'Yellowjacket' && '🐝'}
-                      {animal.name.includes('Yeti') && '🦍'}
-                      {animal.name === 'Zebra' && '🦓'}
-                    </div>
-                  </div>
+                  animal.name
                 )}
                 
                 {/* Sound Indicator Overlay */}

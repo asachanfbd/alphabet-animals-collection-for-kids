@@ -214,9 +214,9 @@
           "sound": "/sounds/animals/koala.mp3"
         },
         {
-          "name": "Kiwi",
-          "image": "/images/animals/kiwi.jpg",
-          "sound": "/sounds/animals/kiwi.mp3"
+          "name": "Komodo Dragon",
+          "image": "/images/animals/komodo-dragon.jpg",
+          "sound": "/sounds/animals/komodo-dragon.mp3"
         }
       ]
     },
@@ -404,18 +404,13 @@
       "letter": "U",
       "animals": [
         {
-          "name": "Unicorn (mythical)",
-          "image": "/images/animals/unicorn.jpg",
-          "sound": "/sounds/animals/unicorn.mp3"
-        },
-        {
           "name": "Urchin (sea)",
           "image": "/images/animals/urchin.jpg",
           "sound": "/sounds/animals/urchin.mp3"
         },
         {
           "name": "Uakari (monkey)",
-          "image": "/images/animals/uakari.jpg",
+          "image": "/images/animals/uakari.webp",
           "sound": "/sounds/animals/uakari.mp3"
         }
       ]
@@ -464,9 +459,19 @@
       "letter": "X",
       "animals": [
         {
-          "name": "Xenomorph",
-          "image": "/images/animals/xenomorph.jpg",
-          "sound": "/sounds/animals/xenomorph.mp3"
+          "name": "Xenops",
+          "image": "/images/animals/xenops.jpg",
+          "sound": "/sounds/animals/xenops.mp3"
+        },
+        {
+          "name": "Xenarthra",
+          "image": "/images/animals/xenarthra.jpg",
+          "sound": "/sounds/animals/xenarthra.mp3"
+        },
+        {
+          "name": "Xiphosura (horseshoe crab)",
+          "image": "/images/animals/xiphosura.png",
+          "sound": "/sounds/animals/xiphosura.mp3"
         }
       ]
     },
@@ -484,9 +489,9 @@
           "sound": "/sounds/animals/yellowjacket.mp3"
         },
         {
-          "name": "Yeti (mythical)",
-          "image": "/images/animals/yeti.jpg",
-          "sound": "/sounds/animals/yeti.mp3"
+          "name": "Yabby",
+          "image": "/images/animals/yabby.png",
+          "sound": "/sounds/animals/yabby.mp3"
         }
       ]
     },
@@ -497,6 +502,11 @@
           "name": "Zebra",
           "image": "/images/animals/zebra.jpg",
           "sound": "/sounds/animals/zebra.mp3"
+        },
+        {
+          "name": "Zander (fish)",
+          "image": "/images/animals/zander.jpg",
+          "sound": "/sounds/animals/zander.mp3"
         }
       ]
     }
