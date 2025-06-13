@@ -29,6 +29,7 @@ export default function AnimalsPage() {
   const router = useRouter();
 
   const animalSlides: AnimalSlide[] = animalsData.animals;
+  const totalPages = animalSlides.length;
 
   // Stop any playing audio
   const stopAllAudio = () => {
@@ -151,17 +152,46 @@ export default function AnimalsPage() {
 
   const nextSlide = () => {
     stopAllAudio();
-    setCurrentSlide((prev) => (prev + 1) % animalSlides.length);
+    if (currentSlide < totalPages - 1) {
+      setCurrentSlide(currentSlide + 1);
+    }
   };
 
   const prevSlide = () => {
     stopAllAudio();
-    setCurrentSlide((prev) => (prev - 1 + animalSlides.length) % animalSlides.length);
+    if (currentSlide > 0) {
+      setCurrentSlide(currentSlide - 1);
+    }
   };
 
-  const handleSlideIndicatorClick = (index: number) => {
+  const goToPage = (pageIndex: number) => {
     stopAllAudio();
-    setCurrentSlide(index);
+    setCurrentSlide(pageIndex);
+  };
+
+  // Generate pagination numbers with 3 pages to left and right
+  const getPaginationNumbers = () => {
+    const currentPage = currentSlide + 1; // Convert to 1-based
+    const maxVisible = 7; // 3 left + current + 3 right
+    
+    let startPage = Math.max(1, currentPage - 3);
+    let endPage = Math.min(totalPages, currentPage + 3);
+    
+    // Adjust if we're near the beginning or end
+    if (endPage - startPage + 1 < maxVisible) {
+      if (startPage === 1) {
+        endPage = Math.min(totalPages, startPage + maxVisible - 1);
+      } else if (endPage === totalPages) {
+        startPage = Math.max(1, endPage - maxVisible + 1);
+      }
+    }
+    
+    const pages = [];
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(i);
+    }
+    
+    return pages;
   };
 
   // Clean up audio when component unmounts
@@ -172,6 +202,7 @@ export default function AnimalsPage() {
   }, []);
 
   const currentSlideData = animalSlides[currentSlide];
+  const paginationNumbers = getPaginationNumbers();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-400 via-blue-400 to-purple-500 flex flex-col">
@@ -202,7 +233,7 @@ export default function AnimalsPage() {
         </div>
         
         <div className="text-white/80 text-xl font-medium">
-          {currentSlide + 1} of {animalSlides.length}
+          Page {currentSlide + 1} of {totalPages}
         </div>
       </div>
 
@@ -250,6 +281,62 @@ export default function AnimalsPage() {
                       {animal.name === 'Fox' && '🦊'}
                       {animal.name === 'Frog' && '🐸'}
                       {animal.name === 'Fish' && '🐟'}
+                      {animal.name === 'Goat' && '🐐'}
+                      {animal.name === 'Gecko' && '🦎'}
+                      {animal.name === 'Giraffe' && '🦒'}
+                      {animal.name === 'Horse' && '🐴'}
+                      {animal.name === 'Hamster' && '🐹'}
+                      {animal.name === 'Hedgehog' && '🦔'}
+                      {animal.name === 'Iguana' && '🦎'}
+                      {animal.name === 'Impala' && '🦌'}
+                      {animal.name === 'Insect' && '🐛'}
+                      {animal.name === 'Jaguar' && '🐆'}
+                      {animal.name === 'Jellyfish' && '🪼'}
+                      {animal.name === 'Jackal' && '🐺'}
+                      {animal.name === 'Kangaroo' && '🦘'}
+                      {animal.name === 'Koala' && '🐨'}
+                      {animal.name === 'Kiwi' && '🥝'}
+                      {animal.name === 'Lion' && '🦁'}
+                      {animal.name === 'Llama' && '🦙'}
+                      {animal.name === 'Lizard' && '🦎'}
+                      {animal.name === 'Monkey' && '🐵'}
+                      {animal.name === 'Mouse' && '🐭'}
+                      {animal.name === 'Moose' && '🫎'}
+                      {animal.name === 'Newt' && '🦎'}
+                      {animal.name === 'Narwhal' && '🐋'}
+                      {animal.name === 'Nightingale' && '🐦'}
+                      {animal.name === 'Octopus' && '🐙'}
+                      {animal.name === 'Ostrich' && '🪶'}
+                      {animal.name === 'Otter' && '🦦'}
+                      {animal.name === 'Penguin' && '🐧'}
+                      {animal.name === 'Panda' && '🐼'}
+                      {animal.name === 'Parrot' && '🦜'}
+                      {animal.name === 'Quail' && '🐦'}
+                      {animal.name === 'Quokka' && '🐹'}
+                      {animal.name === 'Quoll' && '🐱'}
+                      {animal.name === 'Rabbit' && '🐰'}
+                      {animal.name === 'Raccoon' && '🦝'}
+                      {animal.name === 'Rat' && '🐀'}
+                      {animal.name === 'Snake' && '🐍'}
+                      {animal.name === 'Sheep' && '🐑'}
+                      {animal.name === 'Seal' && '🦭'}
+                      {animal.name === 'Tiger' && '🐅'}
+                      {animal.name === 'Turtle' && '🐢'}
+                      {animal.name === 'Tarantula' && '🕷️'}
+                      {animal.name.includes('Unicorn') && '🦄'}
+                      {animal.name.includes('Urchin') && '🦔'}
+                      {animal.name.includes('Uakari') && '🐵'}
+                      {animal.name === 'Vulture' && '🦅'}
+                      {animal.name.includes('Viper') && '🐍'}
+                      {animal.name === 'Vicuna' && '🦙'}
+                      {animal.name === 'Walrus' && '🦭'}
+                      {animal.name === 'Wasp' && '🐝'}
+                      {animal.name === 'Whale' && '🐋'}
+                      {animal.name === 'Xenomorph' && '👽'}
+                      {animal.name === 'Yak' && '🐂'}
+                      {animal.name === 'Yellowjacket' && '🐝'}
+                      {animal.name.includes('Yeti') && '🦍'}
+                      {animal.name === 'Zebra' && '🦓'}
                     </div>
                   </div>
                 )}
@@ -284,47 +371,55 @@ export default function AnimalsPage() {
         </div>
       </div>
 
-      {/* Fixed Bottom Navigation */}
+      {/* Fixed Bottom Navigation with Traditional Pagination */}
       <div className="relative z-10 bg-white/10 backdrop-blur-sm border-t border-white/20 p-6">
-        <div className="flex justify-center items-center space-x-8 max-w-4xl mx-auto">
+        <div className="flex justify-center items-center space-x-4 max-w-6xl mx-auto">
+          {/* Previous Button */}
           <Button
             onClick={prevSlide}
             size="lg"
             disabled={currentSlide === 0}
-            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm disabled:opacity-50 px-8 py-4 text-lg"
+            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm disabled:opacity-50 px-6 py-3 text-lg"
             variant="outline"
           >
-            <ChevronLeft className="w-6 h-6 mr-2" />
-            Previous
+            <ChevronLeft className="w-6 h-6" />
           </Button>
 
-          {/* Slide Indicators */}
-          <div className="flex space-x-3">
-            {animalSlides.map((slide, index) => (
+          {/* Page Numbers */}
+          <div className="flex space-x-2">
+            {paginationNumbers.map((pageNum) => (
               <button
-                key={index}
+                key={pageNum}
                 className={`w-12 h-12 rounded-full transition-all duration-300 flex items-center justify-center text-lg font-bold ${
-                  index === currentSlide 
-                    ? 'bg-white text-gray-800 scale-125 shadow-lg' 
-                    : 'bg-white/50 text-white hover:bg-white/70 hover:text-gray-800'
+                  pageNum === currentSlide + 1
+                    ? 'bg-white text-gray-800 scale-110 shadow-lg ring-2 ring-white/50' 
+                    : 'bg-white/30 text-white hover:bg-white/50 hover:text-gray-800 hover:scale-105'
                 }`}
-                onClick={() => handleSlideIndicatorClick(index)}
+                onClick={() => goToPage(pageNum - 1)}
               >
-                {slide.letter}
+                {pageNum}
               </button>
             ))}
           </div>
 
+          {/* Next Button */}
           <Button
             onClick={nextSlide}
             size="lg"
-            disabled={currentSlide === animalSlides.length - 1}
-            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm disabled:opacity-50 px-8 py-4 text-lg"
+            disabled={currentSlide === totalPages - 1}
+            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm disabled:opacity-50 px-6 py-3 text-lg"
             variant="outline"
           >
-            Next
-            <ChevronRight className="w-6 h-6 ml-2" />
+            <ChevronRight className="w-6 h-6" />
           </Button>
+        </div>
+
+        {/* Letter Indicator */}
+        <div className="text-center mt-4">
+          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2">
+            <span className="text-white/80 text-sm font-medium">Current Letter:</span>
+            <span className="text-white text-xl font-bold">{currentSlideData.letter}</span>
+          </div>
         </div>
       </div>
     </div>
