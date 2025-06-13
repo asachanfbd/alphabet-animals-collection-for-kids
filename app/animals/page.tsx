@@ -169,26 +169,29 @@ export default function AnimalsPage() {
     setCurrentSlide(pageIndex);
   };
 
-  // Generate pagination numbers with 3 pages to left and right
-  const getPaginationNumbers = () => {
-    const currentPage = currentSlide + 1; // Convert to 1-based
+  // Generate pagination letters with 3 pages to left and right
+  const getPaginationLetters = () => {
+    const currentPage = currentSlide; // 0-based index
     const maxVisible = 7; // 3 left + current + 3 right
     
-    let startPage = Math.max(1, currentPage - 3);
-    let endPage = Math.min(totalPages, currentPage + 3);
+    let startPage = Math.max(0, currentPage - 3);
+    let endPage = Math.min(totalPages - 1, currentPage + 3);
     
     // Adjust if we're near the beginning or end
     if (endPage - startPage + 1 < maxVisible) {
-      if (startPage === 1) {
-        endPage = Math.min(totalPages, startPage + maxVisible - 1);
-      } else if (endPage === totalPages) {
-        startPage = Math.max(1, endPage - maxVisible + 1);
+      if (startPage === 0) {
+        endPage = Math.min(totalPages - 1, startPage + maxVisible - 1);
+      } else if (endPage === totalPages - 1) {
+        startPage = Math.max(0, endPage - maxVisible + 1);
       }
     }
     
     const pages = [];
     for (let i = startPage; i <= endPage; i++) {
-      pages.push(i);
+      pages.push({
+        index: i,
+        letter: animalSlides[i].letter
+      });
     }
     
     return pages;
@@ -202,7 +205,7 @@ export default function AnimalsPage() {
   }, []);
 
   const currentSlideData = animalSlides[currentSlide];
-  const paginationNumbers = getPaginationNumbers();
+  const paginationLetters = getPaginationLetters();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-400 via-blue-400 to-purple-500 flex flex-col">
@@ -371,7 +374,7 @@ export default function AnimalsPage() {
         </div>
       </div>
 
-      {/* Fixed Bottom Navigation with Traditional Pagination */}
+      {/* Fixed Bottom Navigation with Letter-Based Pagination */}
       <div className="relative z-10 bg-white/10 backdrop-blur-sm border-t border-white/20 p-6">
         <div className="flex justify-center items-center space-x-4 max-w-6xl mx-auto">
           {/* Previous Button */}
@@ -385,19 +388,19 @@ export default function AnimalsPage() {
             <ChevronLeft className="w-6 h-6" />
           </Button>
 
-          {/* Page Numbers */}
+          {/* Letter Pagination */}
           <div className="flex space-x-2">
-            {paginationNumbers.map((pageNum) => (
+            {paginationLetters.map((page) => (
               <button
-                key={pageNum}
+                key={page.index}
                 className={`w-12 h-12 rounded-full transition-all duration-300 flex items-center justify-center text-lg font-bold ${
-                  pageNum === currentSlide + 1
+                  page.index === currentSlide
                     ? 'bg-white text-gray-800 scale-110 shadow-lg ring-2 ring-white/50' 
                     : 'bg-white/30 text-white hover:bg-white/50 hover:text-gray-800 hover:scale-105'
                 }`}
-                onClick={() => goToPage(pageNum - 1)}
+                onClick={() => goToPage(page.index)}
               >
-                {pageNum}
+                {page.letter}
               </button>
             ))}
           </div>
@@ -412,14 +415,6 @@ export default function AnimalsPage() {
           >
             <ChevronRight className="w-6 h-6" />
           </Button>
-        </div>
-
-        {/* Letter Indicator */}
-        <div className="text-center mt-4">
-          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2">
-            <span className="text-white/80 text-sm font-medium">Current Letter:</span>
-            <span className="text-white text-xl font-bold">{currentSlideData.letter}</span>
-          </div>
         </div>
       </div>
     </div>
