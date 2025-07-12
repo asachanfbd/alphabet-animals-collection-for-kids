@@ -400,7 +400,7 @@ export default function AnimalsPage() {
                 onClick={prevSlide}
                 size="lg"
                 disabled={currentSlide === 0}
-                className="bg-white/30 border-0 text-white hover:bg-white/50 backdrop-blur-sm disabled:opacity-30 w-12 h-12 p-0 rounded-2xl transition-all duration-200 active:scale-95"
+                className="bg-white/30 border-0 text-gray-800 hover:bg-white/50 backdrop-blur-sm disabled:opacity-30 w-12 h-12 p-0 rounded-2xl transition-all duration-200 active:scale-95"
                 variant="ghost"
                 type="button"
               >
@@ -416,7 +416,7 @@ export default function AnimalsPage() {
                     className={`w-10 h-10 rounded-2xl transition-all duration-300 flex items-center justify-center text-base font-bold active:scale-95 ${
                       page.index === currentSlide
                         ? 'bg-white text-gray-800 scale-110 shadow-lg' 
-                        : 'bg-white/40 text-white hover:bg-white/60 hover:text-gray-800 hover:scale-105'
+                        : 'bg-white/40 text-gray-700 hover:bg-white/60 hover:text-gray-800 hover:scale-105'
                     }`}
                     onClick={() => goToPage(page.index)}
                   >
@@ -430,7 +430,7 @@ export default function AnimalsPage() {
                 onClick={nextSlide}
                 size="lg"
                 disabled={currentSlide === totalPages - 1}
-                className="bg-white/30 border-0 text-white hover:bg-white/50 backdrop-blur-sm disabled:opacity-30 w-12 h-12 p-0 rounded-2xl transition-all duration-200 active:scale-95"
+                className="bg-white/30 border-0 text-gray-800 hover:bg-white/50 backdrop-blur-sm disabled:opacity-30 w-12 h-12 p-0 rounded-2xl transition-all duration-200 active:scale-95"
                 variant="ghost"
                 type="button"
               >
