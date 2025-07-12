@@ -439,9 +439,9 @@
       "letter": "W",
       "animals": [
         {
-          "name": "Walrus",
-          "image": "/images/animals/walrus.webp",
-          "sound": "/sounds/animals/walrus.mp3"
+          "name": "Wolf",
+          "image": "/images/animals/wolf.webp",
+          "sound": "/sounds/animals/wolf.mp3"
         },
         {
           "name": "Wasp",
