@@ -56,7 +56,7 @@ export default function Home() {
               <div className="space-y-3">
                 <h2 className="text-3xl font-bold text-gray-800">Alphabets</h2>
                 <p className="text-gray-600 text-lg">
-                  Learn the ABC's with fun activities and sounds
+                  Learn the ABC&apos;s with fun activities and sounds
                 </p>
               </div>
               <div className="text-4xl">🔤</div>
